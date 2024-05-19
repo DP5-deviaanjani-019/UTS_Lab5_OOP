@@ -107,4 +107,24 @@ class Perpustakaan {
                 jumlahBuku++;
             }
         }
+        // Menampilkan jumlah buku dan majalah
+        System.out.println("Jumlah Buku: " + jumlahBuku);
+        System.out.println("Jumlah Majalah: " + jumlahMajalah);
+
+        // Menampilkan koleksi buku
+        System.out.println("=== Koleksi Buku ===");
+        for (Buku buku : koleksiBuku) {
+            if (!(buku instanceof Majalah)) {
+                buku.displayInfo();
+            }
+        }
+
+        // Menampilkan koleksi majalah
+        System.out.println("=== Koleksi Majalah ===");
+        for (Buku buku : koleksiBuku) {
+            if (buku instanceof Majalah) {
+                buku.displayInfo();
+            }
+        }
     }
+}

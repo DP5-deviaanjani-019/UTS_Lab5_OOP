@@ -1,6 +1,7 @@
 package Soal1;
 
 import java.util.Scanner; //Mengimpor kelas Scanner dari paket java.util untuk membaca input dari pengguna
+
 public class Main { //Deklarasi kelas utama dengan nama Main
     public static void main(String[] args) { //Deklarasi metode main, titik awal eksekusi program
         Scanner scanner = new Scanner(System.in); //Membuat objek Scanner untuk membaca input dari konsol
@@ -28,20 +29,20 @@ public class Main { //Deklarasi kelas utama dengan nama Main
                 if ("buku".equalsIgnoreCase(jenis)) { // Jika jenis item adalah buku
                     Buku buku = new Buku(judul, pengarang, tahunTerbit); // Membuat objek Buku dengan data yang diberikan pengguna
                     perpustakaan.tambahBuku(buku); // Menambahkan buku ke koleksi perpustakaan
-                }
-                else if ("majalah".equalsIgnoreCase(jenis)) { // Jika jenis item adalah majalah
+                } else if ("majalah".equalsIgnoreCase(jenis)) { // Jika jenis item adalah majalah
                     System.out.println("Masukkan edisi: "); // Meminta pengguna memasukkan edisi majalah
                     int edisi = scanner.nextInt(); // Membaca input pengguna sebagai integer dan menyimpannya ke variabel edisi
                     scanner.nextLine(); // Membersihkan buffer setelah membaca input integer
                     Majalah majalah = new Majalah(judul, pengarang, tahunTerbit, edisi); // Membuat objek Majalah dengan data yang diberikan pengguna
                     perpustakaan.tambahBuku(majalah); // Menambahkan majalah ke koleksi perpustakaan
                 }
-                else if (pilihan == 2) { // Jika pilihan pengguna adalah 2
+            } else if (pilihan == 2) { // Jika pilihan pengguna adalah 2
                 perpustakaan.tampilkanKoleksi(); // Menampilkan seluruh koleksi buku dan majalah di perpustakaan
-                }
-                else if (pilihan == 3) { // Jika pilihan pengguna adalah 3
-                    break; // Menghentikan loop dan keluar dari program
-                }
+            } else if (pilihan == 3) { // Jika pilihan pengguna adalah 3
+                break; // Menghentikan loop dan keluar dari program
             }
+        }
 
-
+        scanner.close(); // Menutup objek Scanner untuk melepaskan sumber daya
+    }
+}
