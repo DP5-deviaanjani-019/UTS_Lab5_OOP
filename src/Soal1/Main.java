@@ -38,5 +38,10 @@ public class Main { //Deklarasi kelas utama dengan nama Main
                 }
                 else if (pilihan == 2) { // Jika pilihan pengguna adalah 2
                 perpustakaan.tampilkanKoleksi(); // Menampilkan seluruh koleksi buku dan majalah di perpustakaan
+                }
+                else if (pilihan == 3) { // Jika pilihan pengguna adalah 3
+                    break; // Menghentikan loop dan keluar dari program
+                }
             }
+
 

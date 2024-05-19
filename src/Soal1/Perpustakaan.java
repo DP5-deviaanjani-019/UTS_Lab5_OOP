@@ -69,4 +69,42 @@ class Majalah extends Buku {
     public void setEdisi(int edisi) {
         this.edisi = edisi;
     }
+    // Overridden method untuk menampilkan informasi majalah
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.println("Edisi: " + edisi);
+    }
 }
+// Kelas Perpustakaan untuk mengelola koleksi buku dan majalah
+class Perpustakaan {
+    private ArrayList<Buku> koleksiBuku; // Koleksi buku yang disimpan dalam ArrayList
+
+    // Konstruktor untuk menginisialisasi koleksi buku
+    public Perpustakaan() {
+        koleksiBuku = new ArrayList<>();
+    }
+
+    // Method untuk menambahkan buku ke koleksi
+    public void tambahBuku(Buku buku) {
+        koleksiBuku.add(buku);
+    }
+    // Method untuk menampilkan seluruh koleksi buku dan majalah
+    public void tampilkanKoleksi() {
+        if (koleksiBuku.isEmpty()) {
+            System.out.println("Koleksi perpustakaan kosong.");
+            return;
+        }
+
+        int jumlahBuku = 0; // Variabel untuk menghitung jumlah buku
+        int jumlahMajalah = 0; // Variabel untuk menghitung jumlah majalah
+
+        // Menghitung jumlah buku dan majalah
+        for (Buku buku : koleksiBuku) {
+            if (buku instanceof Majalah) {
+                jumlahMajalah++;
+            } else {
+                jumlahBuku++;
+            }
+        }
+    }
