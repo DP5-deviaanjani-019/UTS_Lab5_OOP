@@ -38,4 +38,17 @@ class Buku { //Deklarasi kelas Buku yang mewakili sebuah buku
     public void setTahunTerbit(int tahunTerbit) {
         this.tahunTerbit = tahunTerbit;
     }
+    // Method untuk menampilkan informasi buku
+    public void displayInfo() {
+        System.out.println("Judul: " + judul + ", Pengarang: " + pengarang + ", Tahun Terbit: " + tahunTerbit);
+    }
+
+    // Overloaded method untuk menampilkan informasi buku dengan format singkat
+    public void displayInfo(String format) {
+        if ("singkat".equalsIgnoreCase(format)) {
+            System.out.println(judul + " oleh " + pengarang);
+        } else {
+            displayInfo();
+        }
+    }
 }

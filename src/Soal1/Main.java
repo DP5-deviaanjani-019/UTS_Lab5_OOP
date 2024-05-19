@@ -17,3 +17,14 @@ public class Main { //Deklarasi kelas utama dengan nama Main
 
                 System.out.println("Masukkan judul: ");//Meminta pengguna memasukkan judul item
                 String judul = scanner.nextLine(); //Membaca input pengguna sebagai string dan menyimpannya ke variabel judul
+
+                System.out.println("Masukkan pengarang: "); // Meminta pengguna memasukkan pengarang item
+                String pengarang = scanner.nextLine(); // Membaca input pengguna sebagai string dan menyimpannya ke variabel pengarang
+
+                System.out.println("Masukkan tahun terbit: "); // Meminta pengguna memasukkan tahun terbit item
+                int tahunTerbit = scanner.nextInt(); // Membaca input pengguna sebagai integer dan menyimpannya ke variabel tahunTerbit
+                scanner.nextLine(); // Membersihkan buffer setelah membaca input integer
+
+                if ("buku".equalsIgnoreCase(jenis)) { // Jika jenis item adalah buku
+                    Buku buku = new Buku(judul, pengarang, tahunTerbit); // Membuat objek Buku dengan data yang diberikan pengguna
+                    perpustakaan.tambahBuku(buku); // Menambahkan buku ke koleksi perpustakaan
