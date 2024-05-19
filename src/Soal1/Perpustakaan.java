@@ -12,4 +12,30 @@ class Buku { //Deklarasi kelas Buku yang mewakili sebuah buku
         this.pengarang = pengarang; //Menginisialisasi atribut pengarang dengan nilai parameter pengarang
         this.tahunTerbit = tahunTerbit; //Menginisialisasi atribut tahunTerbit dengan nilai parameter tahunTerbit
     }
+    //Getter untuk mendapatkan judul buku
+    public String getJudul() {
+        return judul;
+    }
+    // Setter untuk mengatur judul buku
+    public void setJudul(String judul) {
+        this.judul = judul;
+    }
+    // Getter untuk mendapatkan pengarang buku
+    public String getPengarang() {
+        return pengarang;
+    }
+    // Setter untuk mengatur pengarang buku
+    public void setPengarang(String pengarang) {
+        this.pengarang = pengarang;
+    }
+
+    // Getter untuk mendapatkan tahun terbit buku
+    public int getTahunTerbit() {
+        return tahunTerbit;
+    }
+
+    // Setter untuk mengatur tahun terbit buku
+    public void setTahunTerbit(int tahunTerbit) {
+        this.tahunTerbit = tahunTerbit;
+    }
 }
