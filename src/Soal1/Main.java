@@ -42,7 +42,6 @@ public class Main { //Deklarasi kelas utama dengan nama Main
                 break; // Menghentikan loop dan keluar dari program
             }
         }
-
         scanner.close(); // Menutup objek Scanner untuk melepaskan sumber daya
     }
 }
