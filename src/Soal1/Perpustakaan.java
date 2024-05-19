@@ -60,4 +60,13 @@ class Majalah extends Buku {
         super(judul, pengarang, tahunTerbit);
         this.edisi = edisi;
     }
+    // Getter untuk mendapatkan edisi majalah
+    public int getEdisi() {
+        return edisi;
+    }
+
+    // Setter untuk mengatur edisi majalah
+    public void setEdisi(int edisi) {
+        this.edisi = edisi;
+    }
 }

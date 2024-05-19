@@ -36,4 +36,7 @@ public class Main { //Deklarasi kelas utama dengan nama Main
                     Majalah majalah = new Majalah(judul, pengarang, tahunTerbit, edisi); // Membuat objek Majalah dengan data yang diberikan pengguna
                     perpustakaan.tambahBuku(majalah); // Menambahkan majalah ke koleksi perpustakaan
                 }
+                else if (pilihan == 2) { // Jika pilihan pengguna adalah 2
+                perpustakaan.tampilkanKoleksi(); // Menampilkan seluruh koleksi buku dan majalah di perpustakaan
             }
+
