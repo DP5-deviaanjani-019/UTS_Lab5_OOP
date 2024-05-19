@@ -1,6 +1,5 @@
 package Soal1;
-
-import java.util.ArrayList;//Mengimpor kelas ArrayList dari paket java.util untuk membuat daftar dinamis
+import java.util.ArrayList; //Mengimpor kelas ArrayList dari paket java.util untuk membuat daftar dinamis
 class Buku { //Deklarasi kelas Buku yang mewakili sebuah buku
     private String judul;//Deklarasi atribut judul dengan tipe data String
     private String pengarang;//Deklarasi atribut pengarang dengan tipe data String
@@ -50,5 +49,15 @@ class Buku { //Deklarasi kelas Buku yang mewakili sebuah buku
         } else {
             displayInfo();
         }
+    }
+}
+// Kelas Majalah yang mewarisi kelas Buku
+class Majalah extends Buku {
+    private int edisi; // Atribut edisi majalah
+
+    // Konstruktor untuk menginisialisasi objek Majalah
+    public Majalah(String judul, String pengarang, int tahunTerbit, int edisi) {
+        super(judul, pengarang, tahunTerbit);
+        this.edisi = edisi;
     }
 }

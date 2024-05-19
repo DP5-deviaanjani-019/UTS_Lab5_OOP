@@ -28,3 +28,12 @@ public class Main { //Deklarasi kelas utama dengan nama Main
                 if ("buku".equalsIgnoreCase(jenis)) { // Jika jenis item adalah buku
                     Buku buku = new Buku(judul, pengarang, tahunTerbit); // Membuat objek Buku dengan data yang diberikan pengguna
                     perpustakaan.tambahBuku(buku); // Menambahkan buku ke koleksi perpustakaan
+                }
+                else if ("majalah".equalsIgnoreCase(jenis)) { // Jika jenis item adalah majalah
+                    System.out.println("Masukkan edisi: "); // Meminta pengguna memasukkan edisi majalah
+                    int edisi = scanner.nextInt(); // Membaca input pengguna sebagai integer dan menyimpannya ke variabel edisi
+                    scanner.nextLine(); // Membersihkan buffer setelah membaca input integer
+                    Majalah majalah = new Majalah(judul, pengarang, tahunTerbit, edisi); // Membuat objek Majalah dengan data yang diberikan pengguna
+                    perpustakaan.tambahBuku(majalah); // Menambahkan majalah ke koleksi perpustakaan
+                }
+            }
