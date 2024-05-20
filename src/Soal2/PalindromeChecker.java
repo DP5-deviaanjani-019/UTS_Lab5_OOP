@@ -4,6 +4,7 @@ public class PalindromeChecker {
         String cleanedString = str.replaceAll("\\s+", "").toLowerCase();
         int left = 0;
         int right = cleanedString.length() - 1;
+
             while (left < right) {
                 if (cleanedString.charAt(left) != cleanedString.charAt(right)) {
                     return false;
@@ -12,6 +13,5 @@ public class PalindromeChecker {
                 right--;
             }
         return true;
-
     }
 }
