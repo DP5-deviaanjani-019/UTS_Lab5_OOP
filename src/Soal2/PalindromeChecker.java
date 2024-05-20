@@ -9,6 +9,8 @@ public class PalindromeChecker {
                 if (cleanedString.charAt(left) != cleanedString.charAt(right)) {
                     return false;
                 }
+                left++;
+                right--;
             }
     }
 }

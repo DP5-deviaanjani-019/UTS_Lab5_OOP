@@ -7,6 +7,7 @@ import java.util.Scanner;
          System.out.print("Masukkan sebuah string: ");
          String inputString = scanner.nextLine();
          boolean result = PalindromeChecker.isPalindrome(inputString);
+         System.out.println("Apakah string tersebut palindrome? " + result);
 
      }
 
