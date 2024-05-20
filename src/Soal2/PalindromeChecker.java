@@ -12,5 +12,7 @@ public class PalindromeChecker {
                 left++;
                 right--;
             }
+        return true;
+
     }
 }
