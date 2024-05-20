@@ -6,6 +6,7 @@ import java.util.Scanner;
          Scanner scanner = new Scanner(System.in);
          System.out.print("Masukkan sebuah string: ");
          String inputString = scanner.nextLine();
+         boolean result = PalindromeChecker.isPalindrome(inputString);
 
      }
 
