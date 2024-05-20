@@ -4,5 +4,7 @@ public class PalindromeChecker {
     public static boolean isPalindrome(String str) {
         String cleanedString = str.replaceAll("\\s+", "").toLowerCase();
         int left = 0;
+        int right = cleanedString.length() - 1;
+        return false;
     }
 }
