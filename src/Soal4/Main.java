@@ -9,6 +9,9 @@ public class Main {
         System.out.println("1. Hitung Tetesan per Menit");
         System.out.println("2. Hitung Volume Cairan yang Diinfuskan");
         System.out.println(" Masukkan Pilihan Anda : ");
+        int choice = scanner.nextInt();
 
-    }
+        switch (choice) {
+        }
+        }
 }
