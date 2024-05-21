@@ -19,7 +19,7 @@ public class Rumus {
     }
 
     public double calculateDropRate() {
-
+        return (volume / time) * dropFactor;
     }
 
 }

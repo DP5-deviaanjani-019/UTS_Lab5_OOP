@@ -21,6 +21,14 @@ public class Main {
                 double dropFactor = scanner.nextDouble();
 
                 Rumus dropRateCalc = new Rumus (volume, time, dropFactor);
+                System.out.println("Jumlah tetesan per menit adalah: " + dropRateCalc.calculateDropRate() + " tetes/menit");
+                break;
+            case 2:
+                System.out.println("Masukkan tetesan per menit: ");
+                double dropRate = scanner.nextDouble();
+                System.out.println("Masukkan waktu infus (menit): ");
+                time = scanner.nextDouble();
+                System.out.println("Masukkan faktor tetesan (tetes/ml): ");
 
         }
         }
