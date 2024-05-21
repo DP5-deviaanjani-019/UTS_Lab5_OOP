@@ -11,7 +11,8 @@ public class Main {
         System.out.println(" Masukkan Pilihan Anda : ");
         int choice = scanner.nextInt();
 
-        switch (choice) {
+        switch (choice)
+        {
             case 1:
                 System.out.println("Masukkan volume cairan (ml): ");
                 double volume = scanner.nextDouble();
@@ -38,5 +39,6 @@ public class Main {
                 System.out.println("Pilihan tidak valid.");
                 break;
         }
-        }
+        scanner.close();
+    }
 }
