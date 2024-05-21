@@ -18,6 +18,9 @@ public class Main {
                 System.out.println("Masukkan waktu infus (menit): ");
                 double time = scanner.nextDouble();
                 System.out.println("Masukkan faktor tetesan (tetes/ml): ");
+                double dropFactor = scanner.nextDouble();
+
+                Rumus dropRateCalc = new Rumus (volume, time, dropFactor);
 
         }
         }
