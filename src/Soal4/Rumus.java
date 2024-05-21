@@ -11,6 +11,9 @@ public class Rumus {
         this.dropFactor = dropFactor;
     }
     public Rumus(double dropRate, double time, double dropFactor, boolean isVolume) {
+        this.dropRate = dropRate;
+        this.time = time;
+        this.dropFactor = dropFactor;
 
     }
 }

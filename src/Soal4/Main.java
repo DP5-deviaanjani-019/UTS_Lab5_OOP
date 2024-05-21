@@ -12,6 +12,13 @@ public class Main {
         int choice = scanner.nextInt();
 
         switch (choice) {
+            case 1:
+                System.out.println("Masukkan volume cairan (ml): ");
+                double volume = scanner.nextDouble();
+                System.out.println("Masukkan waktu infus (menit): ");
+                double time = scanner.nextDouble();
+                System.out.println("Masukkan faktor tetesan (tetes/ml): ");
+
         }
         }
 }
