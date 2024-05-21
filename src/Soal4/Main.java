@@ -34,7 +34,9 @@ public class Main {
                 Rumus volumeCalc = new Rumus(dropRate, time, dropFactor, true);
                 System.out.println("Volume cairan yang diinfuskan adalah: " + volumeCalc.calculateVolumeInfused() + " ml");
                 break;
-
+            default:
+                System.out.println("Pilihan tidak valid.");
+                break;
         }
         }
 }
