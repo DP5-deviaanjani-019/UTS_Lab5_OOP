@@ -22,4 +22,6 @@ public class Rumus {
         return (volume / time) * dropFactor;
     }
 
+    public double calculateVolumeInfused() {
+    }
 }

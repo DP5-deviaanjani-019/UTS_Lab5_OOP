@@ -29,6 +29,11 @@ public class Main {
                 System.out.println("Masukkan waktu infus (menit): ");
                 time = scanner.nextDouble();
                 System.out.println("Masukkan faktor tetesan (tetes/ml): ");
+                dropFactor = scanner.nextDouble();
+
+                Rumus volumeCalc = new Rumus(dropRate, time, dropFactor, true);
+                System.out.println("Volume cairan yang diinfuskan adalah: " + volumeCalc.calculateVolumeInfused() + " ml");
+                break;
 
         }
         }
