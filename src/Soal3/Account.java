@@ -42,6 +42,10 @@ public class Account {
             this.debit(amount);
             another.credit(amount);
         }
+        else {
+            System.out.println("Amount exceeded balance");
+        }
     }
+
 
 }
