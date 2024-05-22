@@ -19,5 +19,8 @@ public class TestMain {
 
         a1.debit(500);
         System.out.println(a1);
-    }
+
+        a1.transferTo(a2, 100);
+        System.out.println(a1);
+        }
     }

@@ -45,7 +45,8 @@ public class Account {
         else {
             System.out.println("Amount exceeded balance");
         }
-    }
 
-
+        @Override
+        public String toString() {
+        }
 }
