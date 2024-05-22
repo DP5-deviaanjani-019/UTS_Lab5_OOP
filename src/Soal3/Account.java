@@ -10,27 +10,21 @@ public class Account {
         this.name = name;
         this.balance = balance;
     }
-
     public Account(String id, String name) {
         this(id, name, 0);
     }
-
     public String getID() {
         return id;
     }
-
     public String getName() {
         return name;
     }
-
     public int getBalance() {
         return balance;
     }
-
     public void credit(int amount) {
         balance += amount;
     }
-
     public void debit(int amount) {
         if (amount <= balance) {
             balance -= amount;
@@ -38,7 +32,6 @@ public class Account {
             System.out.println("Amount exceeded balance");
         }
     }
-
     public void transferTo(Account another, int amount) {
         if (amount <= balance) {
             this.debit(amount);
@@ -47,7 +40,6 @@ public class Account {
             System.out.println("Amount exceeded balance");
         }
     }
-
     @Override
     public String toString() {
         return "Account[id=" + id + ",name=" + name + ",balance=" + balance + "]";

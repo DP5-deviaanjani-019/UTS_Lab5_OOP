@@ -3,7 +3,6 @@ public class TestMain {
     public static void main(String[] args) {
         Account a1 = new Account("A101", "Ligma", 88);
         System.out.println(a1);
-
         Account a2 = new Account("A102", "Deezma");
         System.out.println(a2);
 
@@ -13,13 +12,10 @@ public class TestMain {
 
         a1.credit(100);
         System.out.println(a1);
-
         a1.debit(50);
         System.out.println(a1);
-
         a1.debit(500);
         System.out.println(a1);
-
         a1.transferTo(a2, 100);
         System.out.println(a1);
         System.out.println(a2);
