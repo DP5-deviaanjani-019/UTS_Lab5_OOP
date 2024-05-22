@@ -22,5 +22,6 @@ public class TestMain {
 
         a1.transferTo(a2, 100);
         System.out.println(a1);
+        System.out.println(a2);
         }
     }

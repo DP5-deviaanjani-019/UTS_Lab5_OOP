@@ -10,9 +10,11 @@ public class Account {
         this.name = name;
         this.balance = balance;
     }
+
     public Account(String id, String name) {
-    this(id, name, 0);
+        this(id, name, 0);
     }
+
     public String getID() {
         return id;
     }
@@ -41,12 +43,13 @@ public class Account {
         if (amount <= balance) {
             this.debit(amount);
             another.credit(amount);
-        }
-        else {
+        } else {
             System.out.println("Amount exceeded balance");
         }
+    }
 
-        @Override
-        public String toString() {
-        }
+    @Override
+    public String toString() {
+        return "Account[id=" + id + ",name=" + name + ",balance=" + balance + "]";
+    }
 }
