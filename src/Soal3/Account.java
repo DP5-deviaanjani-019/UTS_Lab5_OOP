@@ -11,6 +11,18 @@ public class Account {
         this.balance = balance;
     }
     public Account(String id, String name) {
-        this(id, name, 0); // Default balance is 0
+    this(id, name, 0);
     }
+    public String getID() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+
 }
