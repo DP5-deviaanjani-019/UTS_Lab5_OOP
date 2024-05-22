@@ -36,4 +36,12 @@ public class Account {
             System.out.println("Amount exceeded balance");
         }
     }
+
+    public void transferTo(Account another, int amount) {
+        if (amount <= balance) {
+            this.debit(amount);
+            another.credit(amount);
+        }
+    }
+
 }

@@ -13,5 +13,8 @@ public class TestMain {
 
         a1.credit(100);
         System.out.println(a1);
+
+        a1.debit(50);
+        System.out.println(a1);
     }
     }
