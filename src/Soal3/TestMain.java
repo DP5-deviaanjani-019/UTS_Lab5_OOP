@@ -10,5 +10,8 @@ public class TestMain {
         System.out.println("ID: " + a1.getID());
         System.out.println("Name: " + a1.getName());
         System.out.println("Balance: " + a1.getBalance());
+
+        a1.credit(100);
+        System.out.println(a1);
     }
     }
